@@ -62,10 +62,10 @@ Windowedを忘れると全画面になってしまうのでチェックをつけ
 
 # その他 
 * EasyVTuberのウインドウをアクティブにしていないといけませんがキーを押してる間は表情を変えます。
- - A -> Angry
- - J -> Joy
- - F -> Fun
- - S -> Surprised
- - E -> Extra
+  - A -> Angry
+  - J -> Joy
+  - F -> Fun
+  - S -> Surprised
+  - E -> Extra
  
-* 音声変換は対応していませんので、Voidolとsoundflowerを使って仮想マイクを作るなどしてください。
+* バ美声は対応していませんので、Voidolとsoundflowerを使って仮想マイクを作るなどしてください。
