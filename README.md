@@ -5,7 +5,9 @@
 <img src="./images/completion.gif" width="480px">
 
 # Requirement
-Mac OS X 10.14 or 10.15で動作確認済みです。
+以下の環境で動作確認済みです。
+* Mac OS Mojave(10.14)
+* Mac OS Catalina(10.15)
 
 仮想カメラにCamTwistを利用するためダウンロードしてください。
 * [CamTwist 3.4.3](http://camtwiststudio.com/download/)
