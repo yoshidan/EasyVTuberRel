@@ -19,7 +19,9 @@ Mac OS X 10.14 or 10.15で動作確認済みです。
 * 下のリンクからアプリをダウンロードして起動。
 https://drive.google.com/file/d/1Y9IkXH5VCh60tBIKv3LuVe7eS908pAL5/view  
 
-画面サイズが聞かれるので以下のように設定してPlayを押してください。
+画面サイズが聞かれるので任意のサイズを設定してPlayを押してください。  
+Windowedを忘れると全画面になってしまうのでチェックをつけた方がよいです。  
+解像度は1280 * 800くらいがよいと思います。  
 
 <img src="./images/boot.png" width="320px"> 
 
@@ -29,8 +31,8 @@ https://drive.google.com/file/d/1Y9IkXH5VCh60tBIKv3LuVe7eS908pAL5/view
 <img src="./images/snap.png" width="320px">
 
 ## CamTwistの設定
-たぶん[このリンク](https://hori-ryota.com/blog/live-broadcasting-with-mac/)がわかりやすいですが、  
-かいつまんで説明すると以下の手順を辿ればOKです。
+たぶん[このリンク](https://hori-ryota.com/blog/live-broadcasting-with-mac/)が分かりやすいですが、  
+まとめると以下の手順を辿ればOKです。
 
 1. Preferencesで解像度を変更
 2. Step1でDesktop+を選択
@@ -42,7 +44,7 @@ https://drive.google.com/file/d/1Y9IkXH5VCh60tBIKv3LuVe7eS908pAL5/view
 5. Done Selectionしてエリアを確定
 6. Step3でSave Setupを実行
 
-下図のような設定になっていればOKです。
+下図のような設定になっていればOKです。一度設定した後は
 
 * Cam Twistメイン画面
 <img src="./images/camtwist1.png" width="320px">
@@ -59,7 +61,7 @@ https://drive.google.com/file/d/1Y9IkXH5VCh60tBIKv3LuVe7eS908pAL5/view
 
 
 # その他 
-* キーを押してる間は表情を変えます。EasyVTuberのウインドウをアクティブにしていないといけませんが。。。
+* EasyVTuberのウインドウをアクティブにしていないといけませんがキーを押してる間は表情を変えます。
  - A -> Angry
  - J -> Joy
  - F -> Fun
