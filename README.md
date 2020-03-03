@@ -1,5 +1,5 @@
 # EasyVTuber
-* Macだけでバ美少肉会議するための簡易ツールです。
+* Macだけでバ美肉会議するための簡易ツールです。
 * アバターはVRMのみ対応しています。
 
 <img src="./images/completion.gif" width="480px">
