@@ -67,4 +67,5 @@ Windowedを忘れると全画面になってしまうのでチェックをつけ
  - F -> Fun
  - S -> Surprised
  - E -> Extra
-
+ 
+* 音声変換は対応していませんので、Voidolとsoundflowerを使って仮想マイクを作るなどしてください。
