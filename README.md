@@ -48,7 +48,7 @@ Windowedを忘れると全画面になってしまうのでチェックをつけ
 下図のような設定になっていればOKです。一度設定した後は
 
 * Cam Twistメイン画面
-<img src="./images/camtwist1.png" width="320px">
+<img src="./images/camtwist1.png" width="480px">
 
 * Preferences
 <img src="./images/camtwist2.png" width="320px">
