@@ -1,4 +1,4 @@
-# EasyVTuberRel
+# EasyVTuber
 * Macだけでバ美少肉会議するための簡易ツールです。
 * アバターはVRMのみ対応しています。
 
