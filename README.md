@@ -56,7 +56,8 @@ Windowedを忘れると全画面になってしまうのでチェックをつけ
 <img src="./images/camtwist2.png" width="320px">
 
 ## 会議ツールでの使用（例:Zoom.us)
-[Zoom.us](https://zoom.us/download)を起動してビデオ設定のカメラでCamTwistを選択してください。
+[Zoom.us](https://zoom.us/download)を起動してビデオ設定のカメラでCamTwistを選択してください。  
+※ カメラにCamTwistが出ない場合は再起動してみてください。
 
 <img src="./images/zoom.png" width="480px">
 
