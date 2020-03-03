@@ -1,5 +1,5 @@
 # EasyVTuberRel
-* Macのみでバ美少肉会議するためのツールです。
+* Macだけでバ美少肉会議するための簡易ツールです。
 * アバターはVRMのみ対応しています。
 
 <img src="./images/completion.gif" width="480px">
@@ -58,4 +58,11 @@ https://drive.google.com/file/d/1Y9IkXH5VCh60tBIKv3LuVe7eS908pAL5/view
 <img src="./images/zoom.png" width="480px">
 
 
+# その他 
+* キーを押してる間は表情を変えます。EasyVTuberのウインドウをアクティブにしていないといけませんが。。。
+ - A -> Angry
+ - J -> Joy
+ - F -> Fun
+ - S -> Surprised
+ - E -> Extra
 
