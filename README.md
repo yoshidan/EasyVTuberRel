@@ -14,7 +14,7 @@ Mac OS X 10.14 or 10.15で動作確認済みです。
 # How to Use
 
 ## フェイストラッキングの開始
-* [VRoid Hub](https://hub.vroid.com)などからRMファイルをダウンロード。
+* [VRoid Hub](https://hub.vroid.com)などからVRMファイルをダウンロード。
 * Macのローカルディスクに/data/avatar.vrmというパスで配置。
 * 下のリンクからアプリをダウンロードして起動。
 https://drive.google.com/file/d/1Y9IkXH5VCh60tBIKv3LuVe7eS908pAL5/view  
