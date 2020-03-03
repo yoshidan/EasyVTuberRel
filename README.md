@@ -52,8 +52,6 @@ Windowedを忘れると全画面になってしまうのでチェックをつけ
 * Preferences
 <img src="./images/camtwist2.png" width="320px">
 
-初回のみ[Select Capture area」を選択してください。
-
 ## 会議ツールでの使用（例:Zoom.us)
 [Zoom.us](https://zoom.us/download)を起動してビデオ設定のカメラでCamTwistを選択してください。
 
