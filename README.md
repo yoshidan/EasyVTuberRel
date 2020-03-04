@@ -47,7 +47,7 @@ Windowedを忘れると全画面になってしまうのでチェックをつけ
 5. Done Selectionしてエリアを確定
 6. Step3でSave Setupを実行
 
-下図のような設定になっていればOKです。一度設定した後は
+下図のような設定になっていればOKです。
 
 * Cam Twistメイン画面
 <img src="./images/camtwist1.png" width="480px">
