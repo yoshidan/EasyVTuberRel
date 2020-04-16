@@ -60,8 +60,8 @@ Windowedを忘れると全画面になってしまうのでチェックをつけ
 [Zoom.us](https://zoom.us/download)を起動してビデオ設定のカメラでCamTwistを選択してください。  
 ※ カメラにCamTwistが出ない場合は再起動してみてください。  
 
-※ 2020/4/17 追記：どうやらZoomのversionを4.6.10以上にアップデートするとCam Twistを認識しないようです。
-
+※ 2020/4/17 追記：どうやらZoomのversionを4.6.10以上にアップデートするとCam Twistを認識しないようです。  
+　なので最新版のZoomでは動作しません。 [Zoom 4.6.7はこちら](https://github.com/yoshidan/EasyVTuberRel/issues/3)
 
 <img src="./images/zoom.png" width="480px">
 
