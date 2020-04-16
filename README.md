@@ -58,7 +58,10 @@ Windowedを忘れると全画面になってしまうのでチェックをつけ
 
 ## 会議ツールでの使用（例:Zoom.us)
 [Zoom.us](https://zoom.us/download)を起動してビデオ設定のカメラでCamTwistを選択してください。  
-※ カメラにCamTwistが出ない場合は再起動してみてください。
+※ カメラにCamTwistが出ない場合は再起動してみてください。  
+
+※ 2020/4/17 追記：どうやらZoomのversionを4.6.10以上にアップデートするとCam Twistを認識しないようです。
+
 
 <img src="./images/zoom.png" width="480px">
 
