@@ -62,6 +62,8 @@ Windowedを忘れると全画面になってしまうのでチェックをつけ
 
 ※ 2020/4/17 追記：どうやらZoomのversionを4.6.10以上にアップデートするとCam Twistを認識しないようです。  
 　なので最新版のZoomでは動作しません。 [Zoom ダウングレード版はこちら](https://github.com/yoshidan/EasyVTuberRel/issues/3)
+ 
+※ 2020/5/1 追記：Zoomがバーチャルカメラを認識しないのは、新しいZoomバージョンの署名により、署名のない3rdパーティーライブラリーの利用ができなくなったことを判明したため、逆にZoomの署名を消せばバーチャルカメラの利用が可能になります。具体的にはターミナルに入って、次のコマンドを打てばいいです： `$ codesign --remove-signature /Applications/zoom.us.app/` （Xcodeがインストール済みである必要があります；また権限周りのエラーが起きた場合、`sudo codesign` 等で対応可能なはずです。）
 
 <img src="./images/zoom.png" width="480px">
 
