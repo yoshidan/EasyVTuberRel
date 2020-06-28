@@ -2,10 +2,10 @@
 * Macだけでバ美肉会議するための簡易ツールです。
 * アバターはVRMのみ対応しています。 
 
-ビデオチャットモード  
+ビデオチャット  
 <img src="./images/completion_new.gif" width="480px">
 
-デスクトップマスコットモード  
+デスクトップ配信
 <img src="./images/completion_new_desktop.gif" width="640px">
 
 * 旧バージョンから大幅に動作が変わっています。旧バージョンは[こちら](OLD_VERSION.md)
@@ -28,7 +28,7 @@
 https://drive.google.com/file/d/1khMABsm_YG48IOAQ1DhfD21nd2i6tZTa/view  
 
 * 初回実行時にアクセシビリティの実行権限が求められます。アクセシビリティに権限を与えて、再起動してください。
-  （権限がない場合は、アプリがアクティブになっていない時にデスクトップ共有モードでのキータイプ時の動きがなくなります） 
+  （権限がない場合は、上半身表示モード(後述で、アプリがアクティブになっていない時にキータイプ時の動きがなくなります） 
 
 <img src="./images/accessibilityCheck.jpg" width="320px">
   
