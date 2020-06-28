@@ -59,12 +59,12 @@ https://drive.google.com/file/d/1khMABsm_YG48IOAQ1DhfD21nd2i6tZTa/view
 * それでも認識しない場合は、Zoomのバージョンに問題があります。最新版にして、以下のコマンドを実行してみてください。
 `$ codesign --remove-signature /Applications/zoom.us.app/` （Xcodeがインストール済みである必要があります；また権限周りのエラーが起きた場合、`sudo codesign` 等で対応可能なはずです。）
 
-<img src="./images/zoom.png" width="480px">
+<img src="./images/zoom_new.jpg" width="480px">
 
 ## Zoomでのバーチャル背景の使用
 Zoomのバーチャル背景で「グリーンスクリーンがあります」にチェックをつけるとバーチャル背景が完全になります。
 
-<img src="./images/virtual.jpg" width="480px">
+<img src="./images/virtual_new.jpg" width="480px">
 
 ## 自前の背景の利用
 
