@@ -25,7 +25,7 @@
 * Macのローカルディスクのユーザのホームディレクトリにavatar.vrmという名前で配置  
   (例： OSユーザがyoshidanの場合、/Users/yoshidan/avatar.vrm)
 * 下のリンクからアプリをダウンロードして起動。
-https://drive.google.com/file/d/1Y9IkXH5VCh60tBIKv3LuVe7eS908pAL5/view  
+https://drive.google.com/file/d/1khMABsm_YG48IOAQ1DhfD21nd2i6tZTa/view  
 
 * 初回実行時にアクセシビリティの実行権限が求められます。アクセシビリティに権限を与えて、再起動してください。   
   （権限がない場合は、アプリがアクティブになっていない時にデスクトップ共有モードでのキータイプ時の動きがなくなります） 
