@@ -5,7 +5,7 @@
 ビデオチャット  
 <img src="./images/completion_new.gif" width="480px">
 
-デスクトップ配信
+デスクトップ配信  
 <img src="./images/completion_new_desktop.gif" width="640px">
 
 * 旧バージョンから大幅に動作が変わっています。旧バージョンは[こちら](OLD_VERSION.md)
