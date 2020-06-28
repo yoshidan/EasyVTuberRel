@@ -2,9 +2,7 @@
 * Macだけでバ美肉会議するための簡易ツールです。
 * アバターはVRMのみ対応しています。 
 
-旧バージョンは[!こちら](OLD_VERSION.md)
-
-<img src="./images/completion_new.gif" width="480px">
+<img src="./images/completion.gif" width="480px">
 
 # Requirement
 以下の環境で動作確認済みです。
