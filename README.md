@@ -33,7 +33,7 @@ https://drive.google.com/file/d/1khMABsm_YG48IOAQ1DhfD21nd2i6tZTa/view
 しばらくするとカメラのパーミッション許可が求められます。  
 許可してしばらく待つとアプリにアバターが表示されます。
 
-<img src="./images/snap.png" width="320px">
+<img src="./images/start.jpg" width="320px">
 
 * アプリはデスクトップの最前面に常駐します。（Keynoteの全画面再生時よりも前面）
 
@@ -64,7 +64,7 @@ https://drive.google.com/file/d/1khMABsm_YG48IOAQ1DhfD21nd2i6tZTa/view
 ## リサイズ
 * アプリのウインドウの端をドラッグしてリサイズして、zoomのビデオ幅に合わせることができます。また、デスクトップ共有時のマスコットの大きさの変更にも利用できます。
 
-<img src="./images/resize.jpg" width="640px">
+<img src="./images/resize.gif" width="640px">
 
 ## Zoomでのバーチャル背景の使用
 Zoomのバーチャル背景で「グリーンスクリーンがあります」にチェックをつけるとバーチャル背景が完全になります。
