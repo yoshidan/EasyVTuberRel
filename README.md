@@ -2,9 +2,13 @@
 * Macだけでバ美肉会議するための簡易ツールです。
 * アバターはVRMのみ対応しています。 
 
-旧バージョンは[!こちら](OLD_VERSION.md)
+ビデオチャットモード  
+<img src="./images/completion.gif" width="480px">
 
-<img src="./images/completion_new.gif" width="480px">
+デスクトップ共有モード  
+<img src="./images/completion_new_desk.gif" width="640px">
+
+旧バージョンから大幅に動作が変わっています。旧バージョンは[こちら](OLD_VERSION.md)
 
 # Requirement
 以下の環境で動作確認済みです。
@@ -13,7 +17,6 @@
 
 仮想カメラにCamTwistを利用するためダウンロードしてください。
 * [CamTwist 3.4.3](http://camtwiststudio.com/download/)
-
 
 # How to Use
 
@@ -24,12 +27,8 @@
 * 下のリンクからアプリをダウンロードして起動。
 https://drive.google.com/file/d/1Y9IkXH5VCh60tBIKv3LuVe7eS908pAL5/view  
 
-optionキーを押しながら起動すると、画面サイズが聞かれるので任意のサイズを設定してPlayを押してください。  
-Windowedを忘れると全画面になってしまうのでチェックをつけた方がよいです。  
-そのままPlayすると設定が保存されるので次回以降はoptionキーを押しながら起動する必要はありません。  
-初回optionキーを押さずに起動すると1280 * 800の解像度になります。
-
-<img src="./images/boot.png" width="320px"> 
+* 初回実行時にアクセシビリティの実行権限が求められます。アクセシビリティに権限を与えて、再起動してください。   
+  （権限がない場合は、アプリがアクティブになっていない時にデスクトップ共有モードでのキータイプ時の動きがなくなります） 
 
 しばらくするとカメラのパーミッション許可が求められます。  
 許可してしばらく待つとアプリにアバターが表示されます。
@@ -42,13 +41,7 @@ Windowedを忘れると全画面になってしまうのでチェックをつけ
 
 1. Preferencesで解像度を変更
 2. Step1でDesktop+を選択
-3. SettingsのSelect from exsisting windowで「EasyVTuber」を選択
-4. Select Capture areaボタンを押してウインドウのタイトル部が入らないようにエリアを設定
-
-<img src="./images/camtwist3.png" width="320px">
-
-5. Done Selectionしてエリアを確定
-6. Step3でSave Setupを実行
+3. SettingsのSelect from exsisting windowで「EasyVTuberNew」を選択
 
 下図のような設定になっていればOKです。
 
@@ -60,17 +53,13 @@ Windowedを忘れると全画面になってしまうのでチェックをつけ
 
 ## 会議ツールでの使用（例:Zoom.us)
 [Zoom.us](https://zoom.us/download)を起動してビデオ設定のカメラでCamTwistを選択してください。  
-※ カメラにCamTwistが出ない場合は再起動してみてください。  
-
-※ 2020/4/17 追記：どうやらZoomのversionを4.6.10以上にアップデートするとCam Twistを認識しないようです。  
-　なので最新版のZoomでは動作しません。 [Zoom ダウングレード版はこちら](https://github.com/yoshidan/EasyVTuberRel/issues/3)
- 
-※ 2020/5/1 追記：Zoomがバーチャルカメラを認識しないのは、新しいZoomバージョンの署名により、署名のない3rdパーティーライブラリーの利用ができなくなったことを判明したため、逆にZoomの署名を消せばバーチャルカメラの利用が可能になります。具体的にはターミナルに入って、次のコマンドを打てばいいです： `$ codesign --remove-signature /Applications/zoom.us.app/` （Xcodeがインストール済みである必要があります；また権限周りのエラーが起きた場合、`sudo codesign` 等で対応可能なはずです。）
+* カメラにCamTwistが出ない場合は再起動してみてください。  
+* それでも認識しない場合は、Zoomのバージョンに問題がある可能性た高いです。最新版にして、以下のコマンドを実行してみてください。
+`$ codesign --remove-signature /Applications/zoom.us.app/` （Xcodeがインストール済みである必要があります；また権限周りのエラーが起きた場合、`sudo codesign` 等で対応可能なはずです。）
 
 <img src="./images/zoom.png" width="480px">
 
 ## Zoomでのバーチャル背景の使用
-アプリをアクティブにしてキーボードで「g」を押すと背景がグリーンスクリーンになります。  
 Zoomのバーチャル背景で「グリーンスクリーンがあります」にチェックをつけるとバーチャル背景が完全になります。
 
 <img src="./images/virtual.jpg" width="480px">
@@ -82,11 +71,9 @@ Zoomのバーチャル背景で「グリーンスクリーンがあります」�
 (例： OSユーザがyoshidanの場合、/Users/yoshidan/background.jpg)
 
 アプリ起動時に、背景を配置した画像に変更します。  
-画像のアスペクト比を保ったまま横方向は全て表示します。  
-画像のアスペクト比が画面のアスペクト比と合わない場合、縦方向は中央中心に切り取って表示します。  
-
+デフォルトでは、画像のアスペクト比を保ったまま横方向は全て表示します。画像のアスペクト比が画面のアスペクト比と合わない場合、縦方向は中央中心に切り取って表示します。
+設定画面で 縦方向全表示との切り替えが可能です。 
 <img src="./images/bgimage.jpg" width="320px">
-
 
 # 機能
 ## キーボード
