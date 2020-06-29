@@ -2,7 +2,13 @@
 * Macだけでバ美肉会議するための簡易ツールです。
 * アバターはVRMのみ対応しています。 
 
-<img src="./images/completion.gif" width="480px">
+ビデオチャット  
+<img src="./images/completion_new.gif" width="480px">
+
+デスクトップ配信  
+<img src="./images/completion_new_desktop.gif" width="640px">
+
+* 旧バージョンから大幅に動作が変わっています。旧バージョンは[こちら](OLD_VERSION.md)
 
 # Requirement
 以下の環境で動作確認済みです。
@@ -12,27 +18,27 @@
 仮想カメラにCamTwistを利用するためダウンロードしてください。
 * [CamTwist 3.4.3](http://camtwiststudio.com/download/)
 
-
 # How to Use
 
-## フェイストラッキングの開始
+## 起動
 * [VRoid Hub](https://hub.vroid.com)などからVRMファイルをダウンロード。
 * Macのローカルディスクのユーザのホームディレクトリにavatar.vrmという名前で配置  
   (例： OSユーザがyoshidanの場合、/Users/yoshidan/avatar.vrm)
 * 下のリンクからアプリをダウンロードして起動。
-https://drive.google.com/file/d/1Y9IkXH5VCh60tBIKv3LuVe7eS908pAL5/view  
+https://drive.google.com/file/d/1khMABsm_YG48IOAQ1DhfD21nd2i6tZTa/view  
 
-optionキーを押しながら起動すると、画面サイズが聞かれるので任意のサイズを設定してPlayを押してください。  
-Windowedを忘れると全画面になってしまうのでチェックをつけた方がよいです。  
-そのままPlayすると設定が保存されるので次回以降はoptionキーを押しながら起動する必要はありません。  
-初回optionキーを押さずに起動すると1280 * 800の解像度になります。
+* 初回実行時にアクセシビリティの実行権限が求められます。アクセシビリティに権限を与えて、再起動してください。  
+  権限がない場合は、後述する上半身表示モードにおいて、アプリがアクティブになっていない時にキータイプ時の動きがなくなります）
 
-<img src="./images/boot.png" width="320px"> 
+<img src="./images/accessibilityCheck.jpg" width="320px">
+  
+<img src="./images/accessibility.jpg" width="320px">  
 
-しばらくするとカメラのパーミッション許可が求められます。  
-許可してしばらく待つとアプリにアバターが表示されます。
+* カメラのパーミッション許可が求められますので許可してください。 許可するとトラッキングが開始されます。  
 
-<img src="./images/snap.png" width="320px">
+注） アクセシビリティの権限付与は、アプリを再起動しないと反映されないので注意してください。
+
+* アプリはデスクトップの最前面に常駐します。（Keynoteの全画面再生時よりも前面）
 
 ## CamTwistの設定
 たぶん[このリンク](https://hori-ryota.com/blog/live-broadcasting-with-mac/)が分かりやすいですが、  
@@ -40,13 +46,7 @@ Windowedを忘れると全画面になってしまうのでチェックをつけ
 
 1. Preferencesで解像度を変更
 2. Step1でDesktop+を選択
-3. SettingsのSelect from exsisting windowで「EasyVTuber」を選択
-4. Select Capture areaボタンを押してウインドウのタイトル部が入らないようにエリアを設定
-
-<img src="./images/camtwist3.png" width="320px">
-
-5. Done Selectionしてエリアを確定
-6. Step3でSave Setupを実行
+3. SettingsのSelect from exsisting windowで「EasyVTuberNew」を選択
 
 下図のような設定になっていればOKです。
 
@@ -58,20 +58,21 @@ Windowedを忘れると全画面になってしまうのでチェックをつけ
 
 ## 会議ツールでの使用（例:Zoom.us)
 [Zoom.us](https://zoom.us/download)を起動してビデオ設定のカメラでCamTwistを選択してください。  
-※ カメラにCamTwistが出ない場合は再起動してみてください。  
+* カメラにCamTwistが出ない場合は再起動してみてください。  
+* それでも認識しない場合は、Zoomのバージョンに問題があります。最新版にして、以下のコマンドを実行してみてください。
+`$ codesign --remove-signature /Applications/zoom.us.app/` （Xcodeがインストール済みである必要があります；また権限周りのエラーが起きた場合、`sudo codesign` 等で対応可能なはずです。）
 
-※ 2020/4/17 追記：どうやらZoomのversionを4.6.10以上にアップデートするとCam Twistを認識しないようです。  
-　なので最新版のZoomでは動作しません。 [Zoom ダウングレード版はこちら](https://github.com/yoshidan/EasyVTuberRel/issues/3)
- 
-※ 2020/5/1 追記：Zoomがバーチャルカメラを認識しないのは、新しいZoomバージョンの署名により、署名のない3rdパーティーライブラリーの利用ができなくなったことを判明したため、逆にZoomの署名を消せばバーチャルカメラの利用が可能になります。具体的にはターミナルに入って、次のコマンドを打てばいいです： `$ codesign --remove-signature /Applications/zoom.us.app/` （Xcodeがインストール済みである必要があります；また権限周りのエラーが起きた場合、`sudo codesign` 等で対応可能なはずです。）
+<img src="./images/zoom_new.jpg" width="480px">
 
-<img src="./images/zoom.png" width="480px">
+## リサイズ
+* アプリのウインドウの端をドラッグしてリサイズして、zoomのビデオ幅に合わせることができます。また、デスクトップ共有時のマスコットの大きさの変更にも利用できます。
+
+<img src="./images/resize.gif" width="640px">
 
 ## Zoomでのバーチャル背景の使用
-アプリをアクティブにしてキーボードで「g」を押すと背景がグリーンスクリーンになります。  
 Zoomのバーチャル背景で「グリーンスクリーンがあります」にチェックをつけるとバーチャル背景が完全になります。
 
-<img src="./images/virtual.jpg" width="480px">
+<img src="./images/virtual_new.jpg" width="480px">
 
 ## 自前の背景の利用
 
@@ -80,14 +81,38 @@ Zoomのバーチャル背景で「グリーンスクリーンがあります」�
 (例： OSユーザがyoshidanの場合、/Users/yoshidan/background.jpg)
 
 アプリ起動時に、背景を配置した画像に変更します。  
-画像のアスペクト比を保ったまま横方向は全て表示します。  
-画像のアスペクト比が画面のアスペクト比と合わない場合、縦方向は中央中心に切り取って表示します。  
+デフォルトでは、画像のアスペクト比を保ったまま横方向は全て表示します。画像のアスペクト比が画面のアスペクト比と合わない場合、縦方向は中央中心に切り取って表示します。
+設定画面で 縦方向全表示との切り替えが可能です。   
+<img src="./images/bgimage_new.jpg" width="320px">
 
-<img src="./images/bgimage.jpg" width="320px">
+## 画面共有による配信
+
+* アプリの背景を透過にして、Zoomの画面共有でデスクトップを配信すると、アバターも一緒に配信できます。
+* この時、カメラの方はoffにしておくことをおすすめします。（カメラの方でもアバターが見えると違和感ありますし、オフにした方が帯域に優しいですし。）
+* アプリのウインドウをリサイズしてアバターのサイズを調整できます。
+
+相手側からは以下のように見えています。  
+<img src="./images/desktop.jpg" width="480px">
+
+# アプリ機能
+
+## メニュー(ショートカットキー「m」)
+アプリがアクティブになっている時にキーボードの「m」を押すと、以下のようにメニュー画面が開きます。
+※ アプリ自体はウインドウの最前面に常駐しますが、アクティブにするにはマウスでウインドウを選択する必要があります。
+
+<img src="./images/menu.jpg" width="480px">
+
+| 機能 | 説明 | ショートカットーキー | 
+| ---- | ---- | ----------- | 
+| 背景透過 | 背景を透明にします | t |
+| 背景画像を横方向全表示 | 縦長の背景画像を使った場合で、縦方向に全部表示するようにします | w |
+| 上半身表示 | カメラを引き、キータイプとマウス操作をアバターに反映するようになります | z |
+| フェイストラッキング開始 | カメラを切り替える場合に使用します |  |
+| 音声リップシンク有効 | デフォルトではフェイストラッキングで口を動かしますが、オンにすると音声で動かすようになります |  |
+| カメラコントロール有効 | デフォルトではWindowをドラッグするとアプリを移動しますが、オンにするとアプリ内でYaw方向のカメラ回転ができます。カメラコントロール中はWindow移動ができないので、Windowを移動したい場合は、カメラコントロールのチェックを外してください。 | c |
 
 
-# 機能
-## キーボード
+## 表情ショートカット
 アプリをアクティブにした状態で以下のキーコードを認識します。
 
 | キーコード | 機能 |
@@ -97,13 +122,8 @@ Zoomのバーチャル背景で「グリーンスクリーンがあります」�
 | f | 表情をFunにする |
 | s | 表情をsurprisedにする |
 | e | 表情をExtraにする |
-| g | 背景をグリーンスクリーンと切り替える |
-| c | カメラの方を向かせる |
 
-## カメラ操作
-* 正ボタンをクリックしながらスクロールで縦横回転する
-* 副ボタンをクリックしながらスクロールで上下移動する
-* 2FingerでスクロールするとZoom in/outする
+# その他
+* Windows専用ツール[VMagicMirror](https://booth.pm/ja/items/1272298)のv1.0.0版のソースを元に、[macOS用のPlugin](https://github.com/yoshidan/UnityNativeWindow)を組み合わせて作っています。
+* 機能はかなり減らしていますので、Windowsをお使いの方は[VMagicMirror](https://booth.pm/ja/items/1272298)の利用を推奨します。
 
-# その他 
-* バ美声は対応していませんので、voidolとsoundflowerを使って仮想マイクを作るなどしてください。
