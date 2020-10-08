@@ -25,7 +25,7 @@
 * Macのローカルディスクのユーザのホームディレクトリにavatar.vrmという名前で配置  
   (例： OSユーザがyoshidanの場合、/Users/yoshidan/avatar.vrm)
 * 下のリンクからアプリをダウンロードして起動。
-https://drive.google.com/file/d/1khMABsm_YG48IOAQ1DhfD21nd2i6tZTa/view  
+https://github.com/yoshidan/EasyVTuberRel/releases 
 
 * 初回実行時にアクセシビリティの実行権限が求められます。アクセシビリティに権限を与えて、再起動してください。  
   権限がない場合は、後述する上半身表示モードにおいて、アプリがアクティブになっていない時にキータイプ時の動きがなくなります）
