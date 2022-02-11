@@ -7,8 +7,8 @@ namespace App.Main.Scripts.FaceControl
     /// <summary> 自動まばたき用の値計算と、指示があれば実際に値を適用するやつ </summary>
     public class VRMAutoBlink : MonoBehaviour
     {
-        private static readonly BlendShapeKey BlinkLKey = new BlendShapeKey(BlendShapePreset.Blink_L);
-        private static readonly BlendShapeKey BlinkRKey = new BlendShapeKey(BlendShapePreset.Blink_R);
+        private static readonly BlendShapeKey BlinkLKey = BlendShapeKey.CreateFromPreset(BlendShapePreset.Blink_L);
+        private static readonly BlendShapeKey BlinkRKey = BlendShapeKey.CreateFromPreset(BlendShapePreset.Blink_R);
 
         [SerializeField]
         private float closeDuration = 0.05f;
