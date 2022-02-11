@@ -1,15 +1,15 @@
 {
   "dependencies": {
-    "com.unity.collab-proxy": {
-      "version": "1.2.16",
+    "com.neuecc.unirx": {
+      "version": "https://github.com/neuecc/UniRx.git?path=Assets/Plugins/UniRx/Scripts",
       "depth": 0,
-      "source": "registry",
+      "source": "git",
       "dependencies": {},
-      "url": "https://packages.unity.com"
+      "hash": "284d5c50d3f1ddd9fa7df3d382ea904732a9c2ff"
     },
     "com.unity.ext.nunit": {
-      "version": "1.0.0",
-      "depth": 0,
+      "version": "1.0.6",
+      "depth": 2,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -62,8 +62,35 @@
       "depth": 0,
       "source": "builtin",
       "dependencies": {
-        "com.unity.modules.ui": "1.0.0"
+        "com.unity.modules.ui": "1.0.0",
+        "com.unity.modules.imgui": "1.0.0"
       }
+    },
+    "com.vrmc.unigltf": {
+      "version": "https://github.com/vrm-c/UniVRM.git?path=/Assets/UniGLTF#v0.63.2",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.vrmc.vrmshaders": "0.63.2"
+      },
+      "hash": "2c190c39d9d50bdb4d40387690c47f1fb6184523"
+    },
+    "com.vrmc.univrm": {
+      "version": "https://github.com/vrm-c/UniVRM.git?path=/Assets/VRM#v0.63.2",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.vrmc.vrmshaders": "0.63.2",
+        "com.vrmc.unigltf": "2.0.0"
+      },
+      "hash": "2c190c39d9d50bdb4d40387690c47f1fb6184523"
+    },
+    "com.vrmc.vrmshaders": {
+      "version": "https://github.com/vrm-c/UniVRM.git?path=/Assets/VRMShaders#v0.63.2",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "2c190c39d9d50bdb4d40387690c47f1fb6184523"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
@@ -198,6 +225,18 @@
       "depth": 0,
       "source": "builtin",
       "dependencies": {
+        "com.unity.modules.ui": "1.0.0",
+        "com.unity.modules.imgui": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0",
+        "com.unity.modules.uielementsnative": "1.0.0"
+      }
+    },
+    "com.unity.modules.uielementsnative": {
+      "version": "1.0.0",
+      "depth": 1,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.modules.ui": "1.0.0",
         "com.unity.modules.imgui": "1.0.0",
         "com.unity.modules.jsonserialize": "1.0.0"
       }

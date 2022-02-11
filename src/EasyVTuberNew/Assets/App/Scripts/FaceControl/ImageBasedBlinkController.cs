@@ -13,8 +13,8 @@ namespace App.Main.Scripts.FaceControl
     {
         private const float EyeCloseHeight = 0.02f;
 
-        private static readonly BlendShapeKey BlinkLKey = new BlendShapeKey(BlendShapePreset.Blink_L);
-        private static readonly BlendShapeKey BlinkRKey = new BlendShapeKey(BlendShapePreset.Blink_R);
+        private static readonly BlendShapeKey BlinkLKey = BlendShapeKey.CreateFromPreset(BlendShapePreset.Blink_L);
+        private static readonly BlendShapeKey BlinkRKey = BlendShapeKey.CreateFromPreset(BlendShapePreset.Blink_R);
 
         [Inject] private FaceTracker _faceTracker = null;
         
